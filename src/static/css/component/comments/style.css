@@ -1,0 +1,230 @@
+.Comments .navbar-nav {
+    width: 100%;
+}
+
+@media(min-width:568px) {
+    .Comments .end {
+        margin-left: auto;
+    }
+}
+
+@media(max-width:768px) {
+    #post {
+        width: 100%;
+    }
+}
+
+.Comments #clicked {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    width: 100%;
+    background-color: #ecb21f;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;
+}
+
+.Comments #profile {
+    background-color: unset;
+
+}
+
+.Comments #post {
+
+    padding: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: #ecb21f;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;
+    width: 50%;
+    margin-left: 27%;
+}
+
+.Comments body {
+    background-color: black;
+}
+
+.Comments #nav-items li a,
+#profile {
+    text-decoration: none;
+    color: rgb(224, 219, 219);
+    background-color: black;
+}
+
+
+.Comments .comments {
+    margin-top: 5%;
+    margin-left: 20px;
+}
+
+.Comments .darker {
+    border: 1px solid #ecb21f;
+    background-color: black;
+    float: right;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.Comments .comment {
+    border: 1px solid rgba(16, 46, 46, 1);
+    background-color: rgba(16, 46, 46, 0.973);
+    float: left;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+
+}
+
+.Comments .comment h4,
+.Comments .comment span,
+.Comments .darker h4,
+.Comments .darker span {
+    display: inline;
+}
+
+.Comments .comment p,
+.Comments .comment span,
+.Comments .darker p,
+.Comments .darker span {
+    color: rgb(184, 183, 183);
+}
+
+.Comments img {
+
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    background-color: rgb(70, 15, 252);
+
+}
+
+.Comments h1,
+h4 {
+    color: white;
+    font-weight: bold;
+}
+
+.Comments label {
+    color: rgb(212, 208, 208);
+}
+
+.Comments #align-form {
+    margin-top: 20px;
+}
+
+.Comments .form-group p a {
+    color: white;
+}
+
+.Comments #checkbx {
+    background-color: black;
+}
+
+#darker img {
+    margin-right: 15px;
+    position: static;
+}
+
+.Comments .form-group input,
+.Comments .form-group textarea {
+    background-color: black;
+    border: 1px solid rgba(16, 46, 46, 1);
+    border-radius: 12px;
+}
+
+.Comments form {
+    border: 1px solid rgba(16, 46, 46, 1);
+    background-color: rgba(16, 46, 46, 0.973);
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: -24%;
+}
+
+.Comments {
+    background-color: black;
+    margin: 20px;
+}
+
+.comment_container {
+    /* background-color: red; */
+    width: 800px;
+    height: 600px;
+    overflow: auto;
+}
+
+.post_comment_box {
+    height: 500px;
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* CSS cho thanh trượt */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* CSS cho thanh kéo */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(249, 241, 1);
+}
+
+/* CSS cho phần còn lại của thanh trượt */
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+
+.comment_box.comment_reply_box {
+    margin-left: 100px !important;
+    left: 50px;
+}
+
+.comment_container {
+    overflow-y: auto;
+    height: 639px;
+    width: 58%;
+    padding-right: 61px;
+}
+
+.reply_comment_icon {
+    background-color: black;
+    color: white;
+    float: right;
+
+    font-size: 1.3vw;
+    margin: 10px;
+}
+
+.box_input_reply {
+    padding: 0;
+    background-color: white;
+}
+
+.box_input_reply form {
+    margin: 0;
+}
+
+.box_input_reply form textarea {
+    width: 88%;
+    height: 90px;
+}
+
+.box_input_reply form button {
+    width: 12%;
+    height: 91px;
+    /* margin-top: 49px; */
+    position: absolute;
+    font-size: 1.8vw;
+    background-color: yellow;
+}
