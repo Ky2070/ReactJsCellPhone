@@ -13,7 +13,7 @@ function HomeBodyProductLaptop() {
   const [listTotalLaptops, setListTotalLaptops] = useState([]);
   // lay danh sách khuyen mãi
   useEffect(() => {
-    fetch(`https://localhost:8000/home/branch/${branchID}/laptops`)
+    fetch(`http://localhost:8000/home/branch/${branchID}/laptops`)
       .then((response) => response.json())
       .then((data) => {
         setListLaptops(data);
@@ -25,7 +25,7 @@ function HomeBodyProductLaptop() {
 
   useEffect(() => {
     // `http://localhost:3001/Smartphone?Brach=${defaultBrach}`
-    fetch(`https://localhost:8000/home/branch/${branchID}/total-laptops`)
+    fetch(`http://localhost:8000/home/branch/${branchID}/total-laptops`)
       .then((response) => response.json())
       .then((data) => {
         console.log("no co chay vo ham lay dât", data);

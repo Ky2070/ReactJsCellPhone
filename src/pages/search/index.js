@@ -16,7 +16,7 @@ function Search({ keySearch }) {
   if (from_price && to_price) {
     useEffect(() => {
       fetch(
-        `https://localhost:8000/home/branch/${branchID}/search-price/${from_price}/${to_price}/${type_product}`
+        `http://localhost:8000/home/branch/${branchID}/search-price/${from_price}/${to_price}/${type_product}`
       )
         .then((response) => response.json())
         .then((data) => {
@@ -29,7 +29,7 @@ function Search({ keySearch }) {
   } else {
     if (search) {
       useEffect(() => {
-        fetch(`https://localhost:8000/home/branch/${branchID}/search/${search}`)
+        fetch(`http://localhost:8000/home/branch/${branchID}/search/${search}`)
           .then((response) => response.json())
           .then((data) => {
             setListProduct(data);

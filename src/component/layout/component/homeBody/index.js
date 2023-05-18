@@ -18,7 +18,7 @@ function HomeBody() {
   // thay "brand" bằng giá trị mặc định của defaultBrach
 
   useEffect(() => {
-    fetch(`https://localhost:8000/home/branch/${branchID}/laptops`)
+    fetch(`http://localhost:8000/home/branch/${branchID}/laptops`)
       .then((response) => response.json())
       .then((data) => {
         setListLaptop(data);
@@ -30,7 +30,7 @@ function HomeBody() {
 
   useEffect(() => {
     // `http://localhost:3001/Smartphone?Brach=${defaultBrach}`
-    fetch(`https://localhost:8000/home/branch/${branchID}/phones`)
+    fetch(`http://localhost:8000/home/branch/${branchID}/phones`)
       .then((response) => response.json())
       .then((data) => {
         console.log("no co chay vo ham lay dât", data);

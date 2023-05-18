@@ -14,7 +14,7 @@ function HomeBodyProductCellPhone() {
 
   useEffect(() => {
     // `http://localhost:3001/Smartphone?Brach=${defaultBrach}`
-    fetch(`https://localhost:8000/home/branch/${branchID}/phones`)
+    fetch(`http://localhost:8000/home/branch/${branchID}/phones`)
       .then((response) => response.json())
       .then((data) => {
         console.log("no co chay vo ham lay dât", data);
@@ -28,7 +28,7 @@ function HomeBodyProductCellPhone() {
 
   useEffect(() => {
     // `http://localhost:3001/Smartphone?Brach=${defaultBrach}`
-    fetch(`https://localhost:8000/home/branch/${branchID}/total-phones`)
+    fetch(`http://localhost:8000/home/branch/${branchID}/total-phones`)
       .then((response) => response.json())
       .then((data) => {
         console.log("no co chay vo ham lay dât", data);

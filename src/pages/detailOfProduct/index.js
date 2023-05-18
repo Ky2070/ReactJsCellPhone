@@ -87,7 +87,7 @@ function Detail_Of_Product() {
   };
 
   useEffect(() => {
-    fetch(`https://localhost:8000/home/branch/${branchID}/product/${id}/`)
+    fetch(`http://localhost:8000/home/branch/${branchID}/product/${id}/`)
       .then((response) => response.json())
       .then((data) => {
         console.log("no co lay detail product", data[0]);
